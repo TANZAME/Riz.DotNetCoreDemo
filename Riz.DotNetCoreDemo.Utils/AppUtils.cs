@@ -4,6 +4,6 @@ namespace Riz.DotNetCoreDemo.Utils
 {
     public class AppUtils
     {
-        public static string GetEnviromentName() => "DEV";
+        public static string GetEnviromentName() => "DEV22";
     }
 }
