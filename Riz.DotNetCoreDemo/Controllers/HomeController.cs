@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Riz.DotNetCoreDemo.Models;
+using Riz.DotNetCoreDemo.Utils;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -16,6 +17,7 @@ namespace Riz.DotNetCoreDemo.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            string env = AppUtils.GetEnviromentName();
         }
 
         public IActionResult Index()
