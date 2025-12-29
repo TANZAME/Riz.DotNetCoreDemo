@@ -17,11 +17,12 @@ namespace Riz.DotNetCoreDemo.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            string env = AppUtils.GetEnviromentName();
         }
 
         public IActionResult Index()
         {
+            string env = AppUtils.GetEnviromentName();
+            ViewData["ENV"] = env;
             return View();
         }
 
